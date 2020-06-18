@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Grid,
   Card,
@@ -6,33 +6,34 @@ import {
   CardMedia,
   CardContent,
   Typography,
-} from "@material-ui/core";
-import me from "../assets/images/me.jpg";
+} from '@material-ui/core';
+import me from '../assets/images/me.jpg';
 
 const styles = {
+  card: {
+    marginTop: '40px',
+    borderStyle: 'solid',
+    borderWidth: '2px',
+  },
   image: {
     height: 0,
-    paddingTop: "100%",
+    paddingTop: '100%',
   },
 };
 
 function About() {
   return (
-    <Grid container justify="center" spacing={3}>
+    <Grid container justify='center' alignItems='center' spacing={3}>
       <Grid item xs={3}>
-        <Card>
-          <CardHeader title="Kevin Wu" subheader="December 30, 1997" />
-          <CardMedia style={styles.image} image={me} title="Kevin" />
-        </Card>
-      </Grid>
-      <Grid item xs={6}>
-        <Card>
+        <Card style={styles.card}>
+          <CardHeader title='Kevin Wu' subheader='December 30, 1997' />
+          <CardMedia style={styles.image} image={me} title='Kevin' />
           <CardContent>
-            <Typography component="h1">Hello, my name is Kevin Wu.</Typography>
-            <Typography variant="body2" color="textPrimary" component="p">
+            <Typography component='h1'>Hello, my name is Kevin Wu.</Typography>
+            <Typography variant='body2' color='textPrimary' component='p'>
               I graduated from Villanova University with a degree in Mechanical
-              Engineering. Some of my hobbies include gaming and drawing. I am
-              currently based in New York City.
+              Engineering. Some of my hobbies include gaming, drawing, and now
+              coding! I am currently based in New York City.
             </Typography>
           </CardContent>
         </Card>
