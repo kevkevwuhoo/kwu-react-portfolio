@@ -1,9 +1,9 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 const useStyles = makeStyles({
   root: {
@@ -26,13 +26,18 @@ export default function NavTabs() {
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
+        indicatorColor='primary'
+        textColor='primary'
         centered
       >
-        <Tab label="About" />
-        <Tab label="Projects" />
-        <Tab label="Contact" />
+        <Tab component={Link} to='/about' value='About' label='About' />
+        <Tab
+          component={Link}
+          to='/projects'
+          value='Projects'
+          label='Projects'
+        />
+        <Tab component={Link} to='/contact' value='Contact' label='Contact' />
       </Tabs>
     </Paper>
   );
