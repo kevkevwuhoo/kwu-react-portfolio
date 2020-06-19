@@ -16,4 +16,15 @@
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9f9f9;
+}
+
+.bg-img h1 {
+  font-size: 100px;
+}
+.bg-img h2 {
+  padding-left: 5px;
 }

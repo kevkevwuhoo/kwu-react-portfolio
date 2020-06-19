@@ -4,7 +4,12 @@ import './style.css';
 const Landing = () => {
   return (
     <div className='container'>
-      <div className='bg-img'></div>
+      <div className='bg-img'>
+        <div className='title'>
+          <h1>KEVIN WU</h1>
+          <h2>Full stack developer. NYC.</h2>
+        </div>
+      </div>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ut
         doloremque earum reprehenderit, laudantium tempora aliquid vero aliquam
