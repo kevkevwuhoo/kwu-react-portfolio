@@ -8,13 +8,17 @@ import './style.css';
 const SocialIcons = () => {
   return (
     <div className='icon-buttons'>
-      <IconButton aria-label='github' href='#'>
+      <IconButton
+        aria-label='github'
+        target='_blank'
+        href='https://github.com/kevkevwuhoo'
+      >
         <GitHubIcon id='github' />
       </IconButton>
-      <IconButton aria-label='linkedin' href='#'>
+      <IconButton aria-label='linkedin' target='_blank' href='#'>
         <LinkedInIcon id='linkedin' />
       </IconButton>
-      <IconButton aria-label='email' href='#'>
+      <IconButton aria-label='email' href='mailto:kwu3@villanova.edu'>
         <EmailIcon id='email' />
       </IconButton>
     </div>
