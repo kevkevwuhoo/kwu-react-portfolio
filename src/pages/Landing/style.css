@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  margin: 0 auto;
-  background: #f9f9f9;
-  font-size: 24px;
-  padding: 25px;
-}
-
 .bg-img {
   background: url('../../assets/background.jpg') no-repeat center;
   background-size: cover;
@@ -26,5 +19,6 @@
   font-size: 100px;
 }
 .bg-img h2 {
+  font-size: 30px;
   padding-left: 5px;
 }
