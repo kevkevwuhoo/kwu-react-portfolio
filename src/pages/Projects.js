@@ -1,7 +1,12 @@
 import React from 'react';
+import SubHeader from '../components/SubHeader';
 
 const Projects = () => {
-  return <h1>This is the projects page.</h1>;
+  return (
+    <div className='projects'>
+      <SubHeader text='Projects' />
+    </div>
+  );
 };
 
 export default Projects;
