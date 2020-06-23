@@ -8,6 +8,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import me from '../assets/images/me.jpg';
+import SubHeader from '../components/SubHeader';
 
 const styles = {
   card: {
@@ -23,22 +24,27 @@ const styles = {
 
 function About() {
   return (
-    <Grid container justify='center' alignItems='center' spacing={3}>
-      <Grid item xs={3}>
-        <Card style={styles.card}>
-          <CardHeader title='Kevin Wu' subheader='December 30, 1997' />
-          <CardMedia style={styles.image} image={me} title='Kevin' />
-          <CardContent>
-            <Typography component='h1'>Hello, my name is Kevin Wu.</Typography>
-            <Typography variant='body2' color='textPrimary' component='p'>
-              I graduated from Villanova University with a degree in Mechanical
-              Engineering. Some of my hobbies include gaming, drawing, and now
-              coding! I am currently based in New York City.
-            </Typography>
-          </CardContent>
-        </Card>
+    <div className='about'>
+      <SubHeader text='About' />
+      <Grid container justify='center' alignItems='center' spacing={3}>
+        <Grid item xs={12} md={3}>
+          <Card style={styles.card}>
+            <CardHeader title='Kevin Wu' subheader='December 30, 1997' />
+            <CardMedia style={styles.image} image={me} title='Kevin' />
+            <CardContent>
+              <Typography component='h1'>
+                Hello, my name is Kevin Wu.
+              </Typography>
+              <Typography variant='body2' color='textPrimary' component='p'>
+                I graduated from Villanova University with a degree in
+                Mechanical Engineering. Some of my hobbies include gaming,
+                drawing, and now coding! I am currently based in New York City.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 }
 
