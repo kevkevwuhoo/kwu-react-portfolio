@@ -1,7 +1,12 @@
 import React from 'react';
+import SubHeader from '../components/SubHeader';
 
 const Contact = () => {
-  return <h1>This is the contact page.</h1>;
+  return (
+    <div className='contact'>
+      <SubHeader text='Contact' />
+    </div>
+  );
 };
 
 export default Contact;
