@@ -3,7 +3,7 @@ import SubHeader from '../components/SubHeader';
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <SubHeader text='Contact' />
     </div>
   );
