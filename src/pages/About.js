@@ -24,7 +24,7 @@ const styles = {
 
 function About() {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
       <SubHeader text='About' />
       <Grid container justify='center' alignItems='center' spacing={3}>
         <Grid item xs={12} md={6}>
