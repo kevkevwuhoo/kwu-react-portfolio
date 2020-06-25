@@ -10,38 +10,38 @@ import WorkoutTracker from '../assets/images/projects/workout-tracker.png';
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
       <SubHeader text='Projects' />
-      <Grid container>
-        <Grid item>
+      <Grid container justify='center' alignItems='center'>
+        <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             href='https://github.com/kevkevwuhoo/touristee'
             src={Touristee}
             alt='Touristee'
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             href='https://github.com/kevkevwuhoo/employee-summary'
             src={EmployeeSummary}
             alt='Employee Summary'
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             href='https://github.com/kevkevwuhoo/weather-dashboard'
             src={WeatherDashboard}
             alt='Weather Dashboard'
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             href='https://github.com/kevkevwuhoo/work-day-scheduler'
             src={WorkDayScheduler}
             alt='Work Day Scheduler'
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             href='https://github.com/kevkevwuhoo/workout-tracker'
             src={WorkoutTracker}
