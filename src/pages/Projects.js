@@ -14,19 +14,39 @@ const Projects = () => {
       <SubHeader text='Projects' />
       <Grid container>
         <Grid item>
-          <ProjectCard src={Touristee} alt='Touristee' />
+          <ProjectCard
+            href='https://github.com/kevkevwuhoo/touristee'
+            src={Touristee}
+            alt='Touristee'
+          />
         </Grid>
         <Grid item>
-          <ProjectCard src={EmployeeSummary} alt='Employee Summary' />
+          <ProjectCard
+            href='https://github.com/kevkevwuhoo/employee-summary'
+            src={EmployeeSummary}
+            alt='Employee Summary'
+          />
         </Grid>
         <Grid item>
-          <ProjectCard src={WeatherDashboard} alt='Weather Dashboard' />
+          <ProjectCard
+            href='https://github.com/kevkevwuhoo/weather-dashboard'
+            src={WeatherDashboard}
+            alt='Weather Dashboard'
+          />
         </Grid>
         <Grid item>
-          <ProjectCard src={WorkDayScheduler} alt='Work Day Scheduler' />
+          <ProjectCard
+            href='https://github.com/kevkevwuhoo/work-day-scheduler'
+            src={WorkDayScheduler}
+            alt='Work Day Scheduler'
+          />
         </Grid>
         <Grid item>
-          <ProjectCard src={WorkoutTracker} alt='Workout Tracker' />
+          <ProjectCard
+            href='https://github.com/kevkevwuhoo/workout-tracker'
+            src={WorkoutTracker}
+            alt='Workout Tracker'
+          />
         </Grid>
       </Grid>
     </div>

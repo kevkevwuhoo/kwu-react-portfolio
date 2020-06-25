@@ -10,12 +10,12 @@ const useStyles = makeStyles({
   },
 });
 
-const ProjectCard = ({ src, alt }) => {
+const ProjectCard = ({ href, src, alt }) => {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea href={href} target='_blank'>
         <CardMedia
           component='img'
           className={classes.media}
