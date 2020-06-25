@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
@@ -8,14 +9,15 @@ import Tab from '@material-ui/core/Tab';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    position: '-webkit-sticky',
+    position: 'sticky',
+    top: 0,
   },
 });
 
 export default function NavTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
-  const location = useLocation();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -30,14 +32,21 @@ export default function NavTabs() {
         textColor='primary'
         centered
       >
-        <Tab component={Link} to='/about' value='About' label='About' />
+        <Tab component={Link} smooth to='/#about' value='About' label='About' />
         <Tab
           component={Link}
-          to='/projects'
+          smooth
+          to='/#projects'
           value='Projects'
           label='Projects'
         />
-        <Tab component={Link} to='/contact' value='Contact' label='Contact' />
+        <Tab
+          component={Link}
+          smooth
+          to='/#contact'
+          value='Contact'
+          label='Contact'
+        />
       </Tabs>
     </Paper>
   );
