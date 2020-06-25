@@ -27,7 +27,7 @@ function About() {
     <div className='about'>
       <SubHeader text='About' />
       <Grid container justify='center' alignItems='center' spacing={3}>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={6}>
           <Card style={styles.card}>
             <CardHeader title='Kevin Wu' subheader='December 30, 1997' />
             <CardMedia style={styles.image} image={me} title='Kevin' />
