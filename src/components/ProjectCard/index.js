@@ -3,10 +3,10 @@ import { makeStyles, Card, CardActionArea, CardMedia } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '350px',
   },
   media: {
-    height: 300,
+    height: '350px',
   },
 });
 
