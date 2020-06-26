@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core';
 import me from '../assets/images/me.jpg';
 import SubHeader from '../components/SubHeader';
+import Skills from '../components/Skills';
 
 const styles = {
   card: {
@@ -44,6 +45,7 @@ function About() {
           </Card>
         </Grid>
       </Grid>
+      <Skills />
     </div>
   );
 }
