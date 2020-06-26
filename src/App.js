@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' component={Landing} />
         <NavTabs />
         <About />
+        <Skills />
         <Projects />
         <Contact />
       </div>
