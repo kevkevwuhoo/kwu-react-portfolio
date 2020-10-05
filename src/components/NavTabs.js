@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -36,16 +35,16 @@ export default function NavTabs() {
         <Tab
           component={Link}
           smooth
-          to='/#projects'
-          value='Projects'
-          label='Projects'
+          to='/#skills'
+          value='Skills'
+          label='Skills'
         />
         <Tab
           component={Link}
           smooth
-          to='/#contact'
-          value='Contact'
-          label='Contact'
+          to='/#projects'
+          value='Projects'
+          label='Projects'
         />
       </Tabs>
     </Paper>
