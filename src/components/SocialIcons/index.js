@@ -15,7 +15,11 @@ const SocialIcons = () => {
       >
         <GitHubIcon id='github' />
       </IconButton>
-      <IconButton aria-label='linkedin' target='_blank' href='#'>
+      <IconButton
+        aria-label='linkedin'
+        target='_blank'
+        href='https://www.linkedin.com/in/kevinwu5389/'
+      >
         <LinkedInIcon id='linkedin' />
       </IconButton>
       <IconButton aria-label='email' href='mailto:kwu3@villanova.edu'>
