@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     position: '-webkit-sticky',
     position: 'sticky',
     top: 0,
+    zIndex: 1000,
   },
 });
 
