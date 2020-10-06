@@ -5,7 +5,7 @@ const SubHeader = ({ text }) => {
   return (
     <div className='subheader'>
       <div className='text'>
-        <h1>{text}</h1>
+        <h3>{text}</h3>
       </div>
     </div>
   );
