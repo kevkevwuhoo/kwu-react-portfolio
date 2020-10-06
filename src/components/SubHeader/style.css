@@ -14,7 +14,7 @@
   text-shadow: 2px 2px 4px #000000;
 }
 
-.text h1 {
+.text h3 {
   font-size: 60px;
   letter-spacing: 5px;
 }
@@ -24,7 +24,7 @@
     padding: 15px;
   }
 
-  .text h1 {
+  .text h3 {
     font-size: 45px;
   }
 }
