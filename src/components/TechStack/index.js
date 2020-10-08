@@ -15,7 +15,7 @@ const TechStack = () => {
   const classes = useStyles();
 
   return (
-    <Container className='skills' className={classes.skills}>
+    <Container className={classes.skills}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={4}>
           <h2 className={classes.label}>Frontend</h2>
