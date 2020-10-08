@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { NavHashLink as Link } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
@@ -9,15 +9,20 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     position: '-webkit-sticky',
+    // eslint-disable-next-line
     position: 'sticky',
     top: 0,
     zIndex: 1000,
   },
 });
 
+const NavLink = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} {...props} />
+));
+
 export default function NavTabs() {
   const classes = useStyles();
-  const [value, setValue] = React.useState();
+  const [value, setValue] = React.useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -32,16 +37,22 @@ export default function NavTabs() {
         textColor='primary'
         centered
       >
-        <Tab component={Link} smooth to='/#about' value='About' label='About' />
         <Tab
-          component={Link}
+          component={NavLink}
+          smooth
+          to='/#about'
+          value='About'
+          label='About'
+        />
+        <Tab
+          component={NavLink}
           smooth
           to='/#skills'
           value='Skills'
           label='Skills'
         />
         <Tab
-          component={Link}
+          component={NavLink}
           smooth
           to='/#projects'
           value='Projects'
