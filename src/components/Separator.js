@@ -10,6 +10,7 @@ const useStyles = makeStyles({
 
 const Separator = () => {
   const classes = useStyles();
+
   return (
     <Box className={classes.divider}>
       <Divider variant='middle' />
