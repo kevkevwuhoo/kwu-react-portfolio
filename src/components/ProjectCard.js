@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     '&:hover img': {
       opacity: 1,
     },
-    '&:hover .makeStyles-card-23': {
+    '&:hover .MuiCard-root': {
       top: 0,
     },
   },
