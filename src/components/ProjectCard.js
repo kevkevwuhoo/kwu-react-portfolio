@@ -3,7 +3,6 @@ import {
   makeStyles,
   Card,
   CardMedia,
-  Button,
   Box,
   Typography,
   IconButton,
@@ -14,18 +13,22 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 const useStyles = makeStyles({
   root: {
     position: 'relative',
-    '&:hover a': {
-      display: 'inline-block',
-    },
     '&:hover h4': {
       display: 'none',
     },
     '&:hover img': {
       opacity: 1,
     },
+    '&:hover .makeStyles-card-23': {
+      top: 0,
+    },
   },
   card: {
     border: '4px solid black',
+    position: 'relative',
+    top: '44px',
+    transition: 'top 0.5s',
+    zIndex: 5,
   },
   title: {
     zIndex: 10,
@@ -42,19 +45,12 @@ const useStyles = makeStyles({
   },
   media: {
     height: '350px',
-    opacity: 0.5,
+    opacity: 0.3,
   },
   buttonBox: {
     display: 'flex',
-    justifyContent: 'space-around',
-    position: 'absolute',
-    bottom: '5%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    justifyContent: 'flex-end',
     width: '100%',
-  },
-  button: {
-    display: 'none',
   },
 });
 
@@ -76,21 +72,11 @@ const ProjectCard = ({ repo, demo, src, alt }) => {
           />
         </Card>
         <Box className={classes.buttonBox}>
-          <IconButton
-            aria-label='github-repo'
-            className={classes.button}
-            href={repo}
-            target='_blank'
-          >
-            <GitHubIcon fontSize='large' />
+          <IconButton aria-label='github-repo' href={repo} target='_blank'>
+            <GitHubIcon fontSize='small' />
           </IconButton>
-          <IconButton
-            aria-label='app-demo'
-            className={classes.button}
-            href={demo}
-            target='_blank'
-          >
-            <ExitToAppIcon fontSize='large' />
+          <IconButton aria-label='app-demo' href={demo} target='_blank'>
+            <ExitToAppIcon fontSize='small' />
           </IconButton>
         </Box>
       </Box>
