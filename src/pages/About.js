@@ -12,6 +12,10 @@ import SubHeader from '../components/SubHeader';
 import Separator from '../components/Separator';
 
 const useStyles = makeStyles({
+  container: {
+    paddingTop: '48px',
+    paddingBottom: '24px',
+  },
   card: {
     borderStyle: 'solid',
     borderWidth: '2px',
@@ -31,7 +35,7 @@ function About() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Container className='about' id='about'>
+      <Container className={classes.container} id='about'>
         <SubHeader text='About me' />
         <Grid container justify='center' alignItems='center' spacing={3}>
           <Grid item xs={12} md={6}>

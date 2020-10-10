@@ -2,16 +2,26 @@ import React from 'react';
 import SubHeader from '../components/SubHeader';
 import ProjectCard from '../components/ProjectCard';
 import { Container, Grid, Divider } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import Touristee from '../assets/images/projects/touristee.png';
 import EmployeeSummary from '../assets/images/projects/employee-summary.png';
 import WeatherDashboard from '../assets/images/projects/weather-dashboard.png';
 import WorkDayScheduler from '../assets/images/projects/work-day-scheduler.png';
 import WorkoutTracker from '../assets/images/projects/workout-tracker.png';
 
+const useStyles = makeStyles({
+  container: {
+    paddingTop: '48px',
+    paddingBottom: '24px',
+  },
+});
+
 const Projects = () => {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
-      <Container className='projects' id='projects'>
+      <Container className={classes.container} id='projects'>
         <SubHeader text='Projects' />
         <Grid container justify='center' alignItems='center' spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
