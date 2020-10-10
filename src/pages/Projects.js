@@ -26,35 +26,38 @@ const Projects = () => {
         <Grid container justify='center' alignItems='center' spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
             <ProjectCard
-              href='https://github.com/kevkevwuhoo/touristee'
+              repo='https://github.com/kevkevwuhoo/touristee'
+              demo='https://kishaprudente.github.io/touristee/'
               src={Touristee}
               alt='Touristee'
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <ProjectCard
-              href='https://github.com/kevkevwuhoo/employee-summary'
+              repo='https://github.com/kevkevwuhoo/employee-summary'
               src={EmployeeSummary}
               alt='Employee Summary'
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <ProjectCard
-              href='https://github.com/kevkevwuhoo/weather-dashboard'
+              repo='https://github.com/kevkevwuhoo/weather-dashboard'
+              demo='https://kevkevwuhoo.github.io/weather-dashboard/'
               src={WeatherDashboard}
               alt='Weather Dashboard'
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <ProjectCard
-              href='https://github.com/kevkevwuhoo/work-day-scheduler'
+              repo='https://github.com/kevkevwuhoo/work-day-scheduler'
+              demo='https://kevkevwuhoo.github.io/work-day-scheduler/'
               src={WorkDayScheduler}
               alt='Work Day Scheduler'
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <ProjectCard
-              href='https://github.com/kevkevwuhoo/workout-tracker'
+              repo='https://github.com/kevkevwuhoo/workout-tracker'
               src={WorkoutTracker}
               alt='Workout Tracker'
             />
